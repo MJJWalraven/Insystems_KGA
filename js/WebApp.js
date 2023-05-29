@@ -9,6 +9,16 @@ window.WebApp.NLZipCode = {
     "getUrl": function(zipCode, apiKey) {
         return "https://api.overheid.io/bag?filters[postcode]="+zipCode+"&ovio-api-key="+apiKey;
     },
+    "validZipCode": function(zh) {
+        var re = new RegExp("[0-9]{4}[A-Z]{2}");
+        if(zh.zipCode.match(re)) {
+            re = new RegExp("[0-9]+");
+            if(zh.houseNo.match(re)) {
+                return true;
+            }
+        }
+        return false;
+    },
     "getAddressFromZipCodeHouse": function(zh, cb) {
         require(["jquery"], function($){
             var url = window.WebApp.NLZipCode.getUrl(zh.zipCode, zh.apiKey);
