@@ -37,7 +37,8 @@ requirejs.config({
     'hammerjs': 'hammer/hammer-2.0.8.min',
     'ojdnd': 'dnd-polyfill/dnd-polyfill-1.0.2.min',
     'touchr': 'touchr/touchr',
-    'WebApp':'https://cdn.jsdelivr.net/gh/MJJWalraven/Insystems_KGA@r3/js/WebApp'
+    'WebApp':'https://cdn.jsdelivr.net/gh/MJJWalraven/Insystems_KGA@r3/js/WebApp',
+    'Midlance':'https://cdn.jsdelivr.net/gh/MJJWalraven/Insystems_KGA@r3/js/midlance'
   })
 });
 }
