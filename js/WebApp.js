@@ -41,6 +41,29 @@ window.WebApp.NLZipCode = {
         });
     }
 };
+window.WebApp.GoogleSignOn = {
+    "createGoogleSignOn": function(params, cb) {
+        require(["googleSignOn"], function() {
+            var e = document.createElement("div");
+            if(params.id==null) {
+                e.id = "GoogleSignOn";
+            }
+            else {
+                e.id = params.id;
+            }
+            cb(e);
+            setTimeout(function() {
+                google.accounts.id.initialize({
+                  client_id: params.googleClientId,
+                  callback: params.handleCredentialResponse
+                });
+                google.accounts.id.renderButton(e, {theme: params.theme});
+                google.accounts.id.prompt();
+            }, 1000);
+            
+        });
+    }
+};
 if(define) {
     define("WebApp", [], function() {
         window.WebApp.initialize();
