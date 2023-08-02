@@ -38,7 +38,7 @@ requirejs.config({
     'ojdnd': 'dnd-polyfill/dnd-polyfill-1.0.2.min',
     'touchr': 'touchr/touchr',
     "highlightjs": "https://cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min",
-    'Midlance':'https://cdn.jsdelivr.net/gh/MJJWalraven/Insystems_KGA@r3/js/midlance'
+    'Midlance':'https://cdn.jsdelivr.net/gh/MJJWalraven/Insystems_KGA@r3/js/midlance',
     "vkbeautify": "https://cdn.jsdelivr.net/npm/vkbeautify@0.99.3/index.min",
     "prism": "https://cdn.jsdelivr.net/npm/prismjs@1.25.0/prism.min",
     "prism_sql": "https://cdn.jsdelivr.net/npm/prismjs@1.25.0/components/prism-sql.min",
